@@ -1,0 +1,210 @@
+.logoname{
+    font-family: "Nunito","Roboto",Arial,sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+@media(max-width:540px)
+{
+    .logoname{
+        transition: 3s;
+        font-size: 22px;
+    }
+}
+.nav{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+@media(max-width:530px)
+{
+    .nav{
+        opacity: 0;
+        display: none;
+    }
+}
+.apply{
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: brown;
+    color: white;
+}
+.apply:hover{
+    box-shadow: 2px 4px 10px black;
+}
+.announcement-bar {
+    height: 50px;
+    background: -webkit-gradient(linear, left top, right top, from(#083ca0), to(#000));
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none
+}
+
+@media(max-width:540px)
+{
+    .announcement-bar{
+        transition: 3s;
+        height: 35px;
+        font-size: 15px;
+    }
+}
+@media(min-width:540px)
+{
+    .btn_one{
+        opacity: 0;
+        display: none;
+    }
+}
+#home:hover{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px black;
+}
+.about:hover{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px black;
+}
+.gallery:hover{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px black;
+}
+.studentlogin:hover{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px black;
+}
+.search:hover{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px black;
+}
+
+
+
+
+
+
+
+
+.btn_one i{
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    right: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.sidebar_menu{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black(5, 4, 4, 0.1);
+    box-shadow: 0 0 6px black(7, 7, 7, 0.5);
+    /* padding: 0 8px; */
+    transition: all 0.2s linear;
+}
+
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 60px;
+    box-shadow: 0 2px 4px black(255, 255, 255, 0.5);
+    height: 60px;
+}
+
+.sidebar_menu .logo a{
+    position: absolute;
+    left: 1000px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sidebar_menu .btn_two i{
+    color: black;
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.sidebar_menu .menu{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+.sidebar_menu .menu li{
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+
+.sidebar_menu .menu i,a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sidebar_menu .menu i{
+    padding-right: 10px;
+}
+
+#check{
+    display: none;
+}
+
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 4px black(255, 255, 255, 0.5);
+}
+.btn_one:hover i{
+    font-size: 40px;
+}
+.btn_two:hover i{
+    font-size: 30px;
+}
+
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#check:checked ~ .sidebar_menu{
+    left: 200px;
+}
+#check:checked ~ .btn_one i{
+    opacity: 0;
+}
+#check:checked ~.sidebar_menu .btn_two i{
+    opacity: 1;
+}
