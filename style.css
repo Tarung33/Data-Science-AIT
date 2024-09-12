@@ -97,10 +97,13 @@
     background: -webkit-gradient(linear, left top, right top, from(#083ca0), to(#000));
     height: fit-content;
     display: grid;
+    flex-wrap: wrap;
 }
 .about2{
     background: -webkit-gradient(linear, left top, right top, from(#000),to(#083ca0));
     height: fit-content;
+    display: grid;
+    flex-wrap: wrap;
 }
 .college{
     color: rgb(68, 214, 250);
